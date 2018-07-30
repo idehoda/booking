@@ -1,0 +1,263 @@
+
+@media only screen and (max-width: 1400px) {
+  .sideListContainer{
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 100%;
+    &__list{
+      & li {
+        list-style-position: inside;     
+        padding-left: 0px;
+        margin-bottom: 10px;
+      }
+      & li:first-of-type{      
+        position: relative;
+        background: none;
+        &:before
+      {
+          content: "";
+          position: absolute;
+          left: -60px;
+          top: 10%;
+          width: 50px;
+          height: 50px;
+          background-image: url(../assets/Triangle.svg);
+          background-repeat: no-repeat;
+          background-position: 0% 10%;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+      }
+          
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1040px) {
+    .header{
+      margin: 10px 0 10px 50px;
+      &__heading{
+        margin-bottom: 0;
+      }
+    }
+    .links{
+      position: relative;
+      &__item{
+        display: inline-block;
+        margin: 0 30px 10px 10px;
+        & img{
+          height: 25px;
+        }      
+      }
+    }
+  
+    .recommendation{
+      font-size: 18px;
+      width: 100%;
+      margin: 0 0 30px 0;
+      padding: 0 20px;
+      float: none;
+      &__heading{
+        margin: 0 0 35px 0;
+        font-size: 32px;
+        &::after{
+          bottom: -25%;
+        }
+      }      
+    }
+  
+    .form__submit{
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  
+    .hasDatepicker,
+    .datepicker{
+      margin-bottom: 20px !important;
+      display: block;
+        width: 75%;
+        height: 500px;
+    }
+    .ui-datepicker-header{
+        margin-bottom: 60px;
+    }
+    .form__details{
+        margin: 0;
+        padding: 80px 80px;
+        display: block;
+          width: 75%;
+      }
+
+    .header__footer{    
+        text-align: center;
+        font-size: 36px;   
+        & span{        
+          margin-top: 40px;      
+          &::after {
+            width: 30%;
+          }
+        }
+      }  
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 768px) {
+
+    .datepicker{
+        display: block;
+        width: 100%;
+    }
+    
+    .header__heading{ 
+      margin-bottom: 40px; 
+      font-size: 52px;
+      & span{              
+        &::after {
+          top: 50%;
+          width: 70%;
+      }
+    }
+  }
+  
+    .wrapper{
+      max-width: 90%;
+      margin: 80px auto;  
+    }
+    .header__heading{
+      margin-bottom: 10px;
+    }
+    .links{
+      position: relative;
+      &__item{
+        display: inline-block;
+        margin: 0 30px 10px 10px;
+        & img{
+          height: 25px;
+        }      
+      }
+    }
+    .intro{
+      padding: 10px;
+      border: none;
+    }
+  
+    main{
+      padding: 0;
+    }
+    .footer{
+      padding: 0;
+    }  
+
+    .ui-datepicker-header{
+      margin-bottom: 0;
+  }
+   
+    .form__details{
+        margin: 0;
+        padding: 80px 80px !important;
+        display: block;
+        width: 100%;
+        padding: 0;
+      }
+      .hasDatepicker,
+    .datepicker{
+      width: 100%;
+    }
+      input[type = "submit"]{
+          margin: 60px 0 10px 0;       
+        }
+
+  }
+  
+
+  @media only screen and (max-width: 500px) {
+    .wrapper{
+      width: 100%;
+    }
+    .header{ 
+      margin: 0;
+  }
+  .header__heading{
+    font-size: 38px;    
+}
+
+.links{
+  padding: 0;
+  &__list{
+    padding: 0;
+  }
+  &__item{
+    margin-left: 0;
+    & img{
+      padding: 0;
+      height: 20px;     
+    }      
+  }
+}
+.intro{
+
+  &__heading{
+    font-size: 16px;
+  }
+  &__paragraph{
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+.recommendation{
+  font-size: 20px;
+
+  &__heading{
+    font-size: 30px; 
+  }
+}
+main{
+  font-size: 14px;
+}
+.main-photo{
+  margin: 20px 0;
+}
+.sideListContainer{
+  font-size: 12px; 
+}
+
+.form__submit{
+  width: 100%;
+}
+.datepicker .ui-datepicker-inline{
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   padding-bottom: 0 !important;  
+}
+.hasDatepicker, .datepicker{
+  padding: 0 !important;
+  height: auto;
+  width: 100%;
+}
+.form__details{  
+  width: 100%;  
+  padding: 30px 20px !important; 
+}
+.form__details > *{
+  font-size: 12px !important;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+select{ 
+  background-size: 5%;
+}
+
+}
